@@ -55,6 +55,10 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -71,6 +75,9 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+
+/* Custom code */
+
 
 /* Basic */
 
@@ -2828,6 +2835,28 @@ input, select, textarea {
 				margin-bottom: 0;
 			}
 
+			.features .image {
+				border: 1px solid #dddddd;
+				padding: 1em;
+				
+			}
+
+			
+
+			.features a {
+				border-bottom: none;
+			}
+
+			.features .image img {
+				width: 15em;
+				transition: all ease-in 0.2s;
+			}
+
+			.features .image img:hover {
+				width: 16em;
+				box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+			}
+
 		@media screen and (max-width: 980px) {
 
 			.features li {
@@ -2858,6 +2887,25 @@ input, select, textarea {
 					}
 
 		}
+
+/* skills */
+
+	.skills {
+		list-style: none;
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.skills li {
+		flex: 1;
+		padding: 0.6em;
+		margin-bottom: 3em;
+	}
+
+	.skills li i {
+		font-size: 5em;
+	}
 
 /* Statistics */
 
@@ -3081,8 +3129,16 @@ input, select, textarea {
 		}
 
 		#header p {
-			font-size: 1.25em;
+			font-size: 2em;
 			letter-spacing: -0.025em;
+			margin: 0;
+			border-top: 5px solid #fff;
+		}
+
+		#header p:last-child {
+			font-size: 1.25em;
+			border-top: none;
+			margin-bottom: 2em;
 		}
 
 		#header.alt {
@@ -3090,7 +3146,7 @@ input, select, textarea {
 		}
 
 			#header.alt h1 {
-				font-size: 3.25em;
+				font-size: 5em;
 			}
 
 			#header.alt > * {
@@ -3583,6 +3639,10 @@ input, select, textarea {
 		#main > .main {
 			padding: 5em 5em 3em 5em ;
 			border-top: solid 1px #dddddd;
+		}
+
+		#main #first {
+			padding-top: 3em;
 		}
 
 			#main > .main:first-child {
