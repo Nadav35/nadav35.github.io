@@ -2888,6 +2888,25 @@ input, select, textarea {
 
 		}
 
+/* Education */
+	.school-entry {
+		display: flex;
+		flex-direction: row;
+		line-height: 2.5;
+	}
+
+	.school-entry span {
+		margin-right: 25px;
+	}
+
+	.school-entry p small {
+		font-size: 0.8em;
+	}
+
+	.school-entry .image img{
+		width: 70px;
+	}
+
 /* skills */
 
 	.skills {
